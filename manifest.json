@@ -3,16 +3,10 @@
   "version": "1.0",
   "description": "Removes distractions from Sparknotes",
   "manifest_version": 2,
-  //"background_page": "pandoragen.html",
-  //"browser_action": {
-    //"default_icon": "favicon.png"
-    //"default_popup": "popup.html"
-  //},
   "content_scripts": [
     {
         "matches": ["http://www.sparknotes.com/*", "https://www.sparknotes.com/*"],
         "js": ["inject.js"]
     }
 	]
-  //"web_accessible_resources": ["pandoragen.js"]
 }

@@ -11,6 +11,16 @@ var element = getElement("light-blue-background border-blue content");
 element.removeAttribute("light-blue-background");
 element.removeAttribute("border-blue");
 element.className = 'content';
+
+element = getElement("light-grey-white-background border-blue padding-15 margin-btm-30");
+element.removeAttribute("light-grey-white-background");
+element.removeAttribute("border-blue");
+element.removeAttribute("padding-15");
+element.removeAttribute("margin-btm-30");
+element.className = 'content';
+while (element.firstChild) {
+    element.removeChild(element.firstChild);
+}
 //element.setAttribute("style","border:0px");
 //element.setAttribute("style","background:#fff");
 
